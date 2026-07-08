@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Test: consuming API and converting json-c#</h1>
+    <div>
+        API link: <a href="https://countries.dev/alpha/US" target="_blank">
+        https://countries.dev/alpha/US
+    </a>
+    </div>
+<div class="madiv">
+    <p>Plain json (extracted):</p>
+    <pre>@Model.RawResult</pre>
+</div>
+
+<div class="madiv">
+    <p>Json converted to c# object:</p>
+    <h2> @Model.MyCountry?.name</h2>
+    <p>Capital: @Model.MyCountry?.capital</p>
+    <p>Region: @Model.MyCountry?.region</p>
+    <p>Population: @Model.MyCountry?.population</p>
+    <p>Area: @Model.MyCountry?.area km²</p>
+ </div>
+
+</div>

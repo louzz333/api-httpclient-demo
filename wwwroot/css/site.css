@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:aliceblue;
+ 
+}
+h1 {
+}
+
+    .madiv {
+        background-color: white;
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 900px;
+        margin: 50px auto;
+        box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+    .text-center {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
